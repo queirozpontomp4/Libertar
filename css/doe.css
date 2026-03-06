@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ededed;
+}
+
+/* HEADER */
+header {
+    height: 90px;
+    background-color: #222222;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.header-nav a:hover{
+    color: #DD9F2D;
+    border-bottom: 2px solid #DD9F2D;
+}
+
+#active {
+    color: #6da118;
+}
+
+/* FIM DO HEADER */
+
+/* MAIN */
+main {
+    margin: 20px 0 0 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* FIM DO MAIN */
+
+/* INÍCIO DOS RESULTADOS */
+.resultados-container{
+    padding: 40px 0;
+    display: flex;
+}
+
+.resultados-texto{
+    padding: 0 60px;
+}
+
+.resultados-texto span{
+    color: #D82828;
+    font-weight: 700;
+}
+
+.resultados-texto h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #D82828;
+    margin-bottom: 20px;
+    text-align: end;
+    border-right: 6px solid #D82828;
+    padding-right: 20px;
+}
+
+.resultados-texto p {
+   font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222222;
+    text-align: end;
+}
+
+.quadrado-vermelho{
+    background-color: #D82828;
+    width: 300px;
+    height: 400px;
+    max-width: 400px;
+}
+/* FIM DOS RESULTADOS */
+
+/* INÍCIO DA DOAÇÃO */
+.doacao-container{
+    padding: 40px 0;
+    display: flex;
+}
+
+.doacao-texto{
+    padding: 0 60px;
+}
+
+.doacao-texto h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    color: #5A8613;
+    margin-bottom: 20px;
+    border-left: 6px solid #5A8613;
+    padding-left: 20px;
+}
+
+.doacao-texto p {
+   font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.doacao-texto span{
+    color: #5A8613;
+    font-weight: 700;
+}
+
+.quadrado-verde{
+    background-color: #5A8613;
+    width: 350px;
+    height: 450px;
+    max-width: 400px;
+}
+
+.botao-doe{
+    margin-top: 20px;
+}
+
+.btn-pix{
+    background-color: transparent;
+    border: 2px solid #5A8613;
+    color: #5A8613;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 0;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-pix:hover{
+    background-color: #5A8613;
+    color: #ffffff;
+}
+/* FIM DA DOAÇÃO */
+
+/* INÍCIO VÍDEO LIBERTAR */
+.video-libertar{
+    padding: 40px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+}
+
+.video-libertar iframe{
+    height: 400px;
+    width: 700px;
+}
+
+/* FIM VÍDEO LIBERTAR */
+
+/* INÍCIO DO FOOTER */
+footer {
+    background-color: #222222;
+    padding: 40px 60px;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-logo {
+    padding: 0 60px 0 0;
+    max-width: 350px;
+}
+
+.footer-logo,
+.footer-logo a {
+    color: white;
+    font-size: 11px;
+    color: #8f8f8f;
+    max-width: 350px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-nav-bloco {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+.footer-nav h3 {
+    color: #DD9F2D;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-nav a {
+    color: #B4B2B2;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-nav a:hover,
+.footer-logo a:hover {
+    transform: scale(1.1);
+    color: #dadada;
+}
+/* FIM DO FOOTER */
+
+/* RESPONSIVIDADE */
+/* NOTEBOOK */
+@media (max-width:1024px) {
+    footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* TABLET */
+@media (max-width:764px) {
+    .header-nav a {
+        font-size: 16px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .quadrado-verde, .quadrado-vermelho{
+        width: 0;
+        height: 0;
+    }
+    
+    footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* CELULAR */
+@media (max-width:480px) {
+    .header-nav a {
+        font-size: 13px;
+    }
+
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        background: #222222;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .video-libertar iframe{
+        max-width: 300px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
