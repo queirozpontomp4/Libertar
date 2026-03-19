@@ -71,69 +71,73 @@ main {
 /* FIM DO MAIN */
 
 /* INÍCIO DO CONTAINER ESQUERDO */
-.pre-vestibular, .esportes, .cidadania{
+.pre-vestibular,
+.esportes,
+.cidadania {
     padding: 40px 60px;
 }
 
-.container-esquerdo{
+.container-esquerdo {
     display: flex;
     gap: 30px;
 }
 
-.container-img img{
+.container-img img {
     flex: 1;
     height: 400px;
     width: 400px;
 }
 
-.container-textos{
+.container-textos {
     flex: 1;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
 
-.container-textos h1{
+.container-textos h1 {
     font-size: 36px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 5px;
 }
 
-.container-textos p{
+.container-textos p {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     padding: 20px 0 0 0;
 }
+
 /* FIM DO CONTAINER ESQUERDO */
 
 /* INÍCIO DO CONTIANER DIREITO */
-.container-direito{
+.container-direito {
     display: flex;
     gap: 30px;
     text-align: right;
 }
+
 /* FIM DO CONTIANER DIREITO */
 
 /* INÍCIO OUTROS CURSOS */
-.outros-cursos{
+.outros-cursos {
     background-color: #222222;
     padding: 40px 60px;
 }
 
-.outros-cursos h1{
+.outros-cursos h1 {
     color: #ffffff;
     font-family: "Dela Gothic One", sans-serif;
     text-align: center;
     font-weight: 400;
 }
 
-.card-container{
+.card-container {
     padding: 20px 0;
     display: flex;
     gap: 20px;
 }
 
-.card{
+.card {
     background-color: #ededed;
     border-radius: 10px;
     min-height: 300px;
@@ -153,45 +157,49 @@ main {
     clip-path: inset(96% 0 0 0);
 }
 
-.card h3{
+.card h3 {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 20px;
 }
 
-.card p{
+.card p {
     font-size: 14px;
     font-family: "Poppins", sans-serif;
 }
+
 /* FIM OUTROS CURSOS */
 
 /*  INÍCIO FAÇA SUA INSCRIÇÃO */
-.inscricao{
+.inscricao {
     padding: 40px 60px;
     text-align: center;
 }
 
-.inscricao h1{
+.inscricao h1 {
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     color: #222222;
     padding: 10px 0;
 }
 
-.inscricao h5{
+.inscricao h5 {
     font-family: "Montserrat", sans-serif;
     color: #222222;
     letter-spacing: 5px;
     font-size: 18px;
 }
 
-.card-inscricao-container{
+.card-inscricao-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px 0;
 }
 
-.card-inscricao{
+/* INSCRIÇÃO FECHADA */
+.card-inscricao-fechada {
     background-color: #aaaaaa;
     min-height: 350px;
     width: 400px;
@@ -202,27 +210,35 @@ main {
     transition: 0.3s ease;
 }
 
-.card-inscricao h6{
-    font-size: 14px;
+.card-inscricao-fechada h6 {
+    font-size: 12px;
     padding: 0 0 20px 0;
     font-style: italic;
+    font-weight: 600;
 }
 
-.card-inscricao h2{
+.card-inscricao-fechada h5 {
+    font-size: 14px;
+    padding: 0 0 20px 0;
+    font-weight: 700;
+    color: #757575;
+}
+
+.card-inscricao-fechada h2 {
     font-size: 30px;
 }
 
-.card-inscricao p{
+.card-inscricao-fechada p {
     font-size: 14px;
     padding: 0 0 20px 0;
 }
 
-.card-inscricao button{
+.card-inscricao-fechada a {
     padding: 10px 50px;
     text-decoration: none;
     color: #646464;
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     cursor: not-allowed;
     background-color: #8f8f8f;
     border: none;
@@ -230,17 +246,98 @@ main {
     font-family: "Montserrat", sans-serif;
 }
 
-.card-inscricao:hover{
+.card-inscricao-fechada:hover {
     animation: tremer 0.3s linear 2;
 }
 
 @keyframes tremer {
-    0%   { transform: translate(0, 0); }
-    20%  { transform: translate(-4px, 2px); }
-    40%  { transform: translate(4px, -2px); }
-    60%  { transform: translate(-4px, 2px); }
-    80%  { transform: translate(4px, -2px); }
-    100% { transform: translate(0, 0); }
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-4px, 2px);
+    }
+
+    40% {
+        transform: translate(4px, -2px);
+    }
+
+    60% {
+        transform: translate(-4px, 2px);
+    }
+
+    80% {
+        transform: translate(4px, -2px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* INSCRIÇÃO ABERTA */
+.card-inscricao-aberta {
+    background-color: #222222;
+    min-height: 350px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.card-inscricao-aberta:hover {
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.43);
+    transform: translateY(-10px);
+}
+
+.card-inscricao-aberta h6 {
+    font-size: 12px;
+    padding: 0 0 20px 0;
+    font-style: italic;
+    font-weight: 600;
+    color: #82be20;
+}
+
+.card-inscricao-aberta h5 {
+    font-size: 14px;
+    padding: 0 0 20px 0;
+    font-weight: 700;
+    color: #fdbd46;
+}
+
+.card-inscricao-aberta h2 {
+    font-size: 30px;
+    color: #82be20;
+}
+
+.card-inscricao-aberta p {
+    font-size: 14px;
+    padding: 0 0 40px 0;
+}
+
+.card-inscricao-aberta a {
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #fdbd46;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fdbd46;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.3s ease;
+}
+
+.card-inscricao-aberta a:hover {
+    background-color: #fdbd46;
+    color: #222222;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(253, 189, 70, 0.68);
+    box-shadow: 0px 0px 15px -5px rgba(253, 189, 70, 0.68);
 }
 
 /*  FIM FAÇA SUA INSCRIÇÃO */
@@ -325,16 +422,18 @@ footer {
         text-align: center;
     }
 
-    .container-direito p, .container-esquerdo p{
+    .container-direito p,
+    .container-esquerdo p {
         font-size: 12px;
     }
 
-    .card-container, .card-inscricao-container{
+    .card-container,
+    .card-inscricao-container {
         flex-direction: column;
         align-items: center;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         gap: 40px;
     }
@@ -349,25 +448,29 @@ footer {
         flex-wrap: wrap;
         gap: 15px;
     }
-    
-    .banner{
+
+    .banner {
         overflow: hidden;
     }
-    .container-direito, .container-esquerdo{
+
+    .container-direito,
+    .container-esquerdo {
         flex-direction: column;
         text-align: center;
     }
 
-    .container-direito p, .container-esquerdo p{
+    .container-direito p,
+    .container-esquerdo p {
         font-size: 12px;
     }
 
-    .card-container, .card-inscricao-container{
+    .card-container,
+    .card-inscricao-container {
         flex-direction: column;
         align-items: center;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         gap: 40px;
     }
